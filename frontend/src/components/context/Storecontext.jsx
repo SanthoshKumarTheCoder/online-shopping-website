@@ -11,7 +11,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("");
-    const url ='http://localhost:5008'
+    const url ='https://ba-ua9j.onrender.com'
     const [list_items, setListItems] = useState(initialListItems);
     const [shoes_items, setShoesItems] = useState(initialShoesItems || []);
     const [dress_items, setDressItems] = useState(initialdressitems || []);
