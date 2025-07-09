@@ -43,7 +43,7 @@ const [show, setShow] = useState(false);
    setShowLogin(true);  // Show the logout button
 
     // Send decoded JWT to the server
-    fetch('http://localhost:5008/api/auth/google', {
+    fetch('https://ba-ua9j.onrender.com/api/auth/google', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(decoded),
@@ -251,7 +251,7 @@ useEffect(() => {
                     /><span>{user?.name}</span></div>
                      <ul className='nav-profile-dropdown'>
                        <li>{role === "admin" && (
-               <Link to="/myorder"> <Button variant="outlined"  sx={{
+               <a href="https://admin-sk.onrender.com" style={{ textDecoration: "none", color: "blue" }}> <Button variant="outlined"  sx={{
     color: "black",
     border: "none",
     fontSize: "10px",
@@ -260,7 +260,7 @@ useEffect(() => {
       outline: "none",
     },
   }} ><Avatar src="/broken-image.jpg" /> <span style={{paddingLeft:"8px"}}>Admin</span>
-                  </Button></Link>
+                  </Button></a>
             )}</li>
                      <li > <Link to="/myorder"> <Button variant="outlined"  sx={{
     color: "black",
