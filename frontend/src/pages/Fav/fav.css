@@ -1,0 +1,256 @@
+.fav-img{
+    height: 340px;
+    width: 230px;
+}
+.countt{
+    margin-top: 20px;
+    color: rgb(248, 240, 240);
+    font-size: 20px;
+    font-weight: 500;
+}
+.fav-icon-hover:hover {
+  color: red !important; /* Change color on hover */
+  transform: scale(1.1); /* Optional: Slightly increase size for smooth effect */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.fav-icon-hoverr {
+  color: rgb(77, 73, 73); /* Default color */
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.fav-icon-hoverr:hover {
+  color: red; /* Color changes to red on hover */
+  transform: scale(1.2); /* Slightly increase size */
+}
+
+.liked .fav-icon-hoverr {
+  color: red; /* Keep the color red when it's marked as favorite */
+}
+
+.favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+    padding-left: 6%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.add-cardd{
+    position: absolute;
+   right: 0px;
+   bottom: 1px;
+   top: 300px;
+   place-self: center;
+   margin-bottom: 8%;
+   background-color: rgb(12, 13, 14);
+   border-radius: 20px;
+}
+.favorites-page{
+    margin-top: 4%;
+}
+
+.favorites-page h2{
+    padding-left: 4%;
+    margin-bottom: 3%;
+    font-weight: 600;
+}
+.No-favorite-items{
+    place-self: center;
+}
+.fav-icon-in{
+    position:absolute;
+    top: 0%;
+}
+.favorite-item-card{
+  width: 230px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.fav-icon {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .fav-icon.clicked {
+    transform: scale(1.3);
+  }
+  
+  .fav-icon svg {
+    transition: fill 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .fav-icon svg:hover {
+    transform: scale(1.2);
+  }
+  
+  .fav-icon.liked svg {
+    fill: red; /* Change color when liked */
+    transform: scale(1.1);
+  }
+  @media (max-width: 999px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}}
+@media (max-width: 796px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}}
+@media (max-width: 530px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}.fav-img{
+  height: 280px;
+  width: 190px;
+}.favorite-item-card{
+  width: 190px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}.fav-des{
+  font-size: 10px;
+ 
+  margin-left: 5%;
+}.add-cardd{
+  position: absolute;
+ right: 20px;
+ bottom: 1px;
+ top: 300px;
+ place-self: center;
+ margin-bottom: 8%;
+ background-color: rgb(12, 13, 14);
+ border-radius: 20px;
+}
+}
+@media (max-width: 432px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}.fav-img{
+  height: 230px;
+  width: 160px;
+}.favorite-item-card{
+  width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}.fav-des{
+  font-size: 10px;
+ 
+  margin-left: 5%;
+}.add-cardd{
+  position: absolute;
+ right: 50px;
+ bottom: 1px;
+ top: 240px;
+ place-self: center;
+ margin-bottom: 8%;
+ background-color: rgb(12, 13, 14);
+ border-radius: 20px;
+}
+}
+@media (max-width: 429px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}.fav-img{
+  height: 230px;
+  width: 160px;
+}.favorite-item-card{
+  width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}.fav-des{
+  font-size: 10px;
+ 
+  margin-left: 5%;
+}.add-cardd{
+  position: absolute;
+ right: 20px;
+ bottom: 1px;
+ top: 240px;
+ place-self: center;
+ margin-bottom: 8%;
+ background-color: rgb(12, 13, 14);
+ border-radius: 20px;
+}
+}
+@media (max-width: 381px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}.fav-img{
+  height: 230px;
+  width: 160px;
+}.favorite-item-card{
+  width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}.fav-des{
+  font-size: 10px;
+ 
+  margin-left: 5%;
+}.add-cardd{
+  position: absolute;
+ right: 0px;
+ bottom: 1px;
+ top: 240px;
+ place-self: center;
+ margin-bottom: 8%;
+ background-color: rgb(12, 13, 14);
+ border-radius: 20px;
+}
+}
+@media (max-width: 361px){
+  .favorite-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0%;
+row-gap: 3%;
+    place-self: center;
+    width: 100%;
+    margin-bottom: 10%;
+}.fav-img{
+  height: 210px;
+  width: 140px;
+}.favorite-item-card{
+  width: 140px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}.fav-des{
+  font-size: 10px;
+ 
+  margin-left: 5%;
+}.add-cardd{
+  position: absolute;
+ right: 20px;
+ bottom: 1px;
+ top: 220px;
+ place-self: center;
+ margin-bottom: 8%;
+ background-color: rgb(12, 13, 14);
+ border-radius: 20px;
+}
+}
