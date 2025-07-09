@@ -135,21 +135,13 @@ import watches_28 from './watches_28.webp'
 import watches_29 from './watches_29.webp'
 import watches_30 from './user.png'
 
-import showImage from './show-1.avif'
-import showImage_2 from './11-wom-1.webp'
-import showImage_3 from './show-3.avif'
-import showImage_4 from './ss.avif'
-
 
 import mobile1 from './1745690662825-a1.webp'
 import mobile2 from './d3d34b7bf427b488eb33cce7063fb45d.webp'
 import mobile3 from './photo-1541336318489-083c7d277b8e.webp'
 import mobile4 from './photo-1612892158094-a4e23361afad.webp'
 import parcel_icon from './parcel_icon.webp'
-export const showImage={showImage}
-export const showImage_2={showImage_2}
-export const showImage_3={showImage_3}
-export const showImage_4={showImage_4}
+
 export const assets ={
     Overnighters_1,
     parcel_icon,
