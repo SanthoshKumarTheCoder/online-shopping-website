@@ -8,7 +8,7 @@ import Add from './components/pages/Add/Add';
 import List from './components/pages/List/List';
 import Order from './components/pages/order/Order';
 import Shoes from './components/pages/Add/Shoes';
-import Item from './components/Sidbar/item';
+import Item from './components/Sidbar/Item';
 import Shoeslist from './components/pages/List/Shoeslist';
 import Listitem from './components/Sidbar/Listitem';
 import DressCollections from './components/pages/Add/DressCollections';
@@ -17,7 +17,7 @@ import DressList from './components/pages/List/DressList';
 import MensList from './components/pages/List/MensList';
 
 function App() {
-   const url="http://localhost:5008"
+   const url="https://ba-ua9j.onrender.com"
 
   return (
     <div>
