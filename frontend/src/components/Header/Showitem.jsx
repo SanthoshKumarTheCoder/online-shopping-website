@@ -3,6 +3,11 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom';
+import showImage from '../assets/show-1.avif'; // adjust path as needed
+import showImage_2 from '../assets/show-1.avif'; // adjust path as needed
+import showImage_3 from '../assets/show-1.avif'; // adjust path as needed
+import showImage_4 from '../assets/show-1.avif'; // adjust path as needed
+
 
 function Showitem() {
   return (
@@ -45,7 +50,7 @@ function Showitem() {
           <SwiperSlide>
                <div >
                 <div>
-                <img className='show-img' src='/src/assets/show-1.avif' alt=''/>
+                <img className='show-img' {showImage} alt=''/>
                 </div>
                 <div className='show-pad'> <Link to="/watches">
                  <button className="learn-more show-but">
@@ -59,7 +64,7 @@ function Showitem() {
           <SwiperSlide>
           <div>
                 <div>
-                <img className=' show-img' src='/src/assets/11-wom-1.webp' alt=''/>
+                <img className=' show-img' {showImage_2} alt=''/>
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
@@ -74,7 +79,7 @@ function Showitem() {
             <SwiperSlide>
             <div>
                 <div>
-                <img className='category-img-44 show-img' src='/src/assets/show-3.avif' alt=''/>
+                <img className='category-img-44 show-img' {showImage_3} alt=''/>
                 </div>
                 <div className='show-pad'>
                      <Link to="/shop"> 
@@ -89,7 +94,7 @@ function Showitem() {
             <SwiperSlide>
             <div>
                 <div>
-                <img className=' show-img' src='/src/assets/ss.avif' alt=''/>
+                <img className=' show-img' {showImage_4} alt=''/>
                 </div>
                 <div className='show-pad'>
                     <Link to="/shoes"> 
