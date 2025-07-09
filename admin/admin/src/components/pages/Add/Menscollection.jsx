@@ -2,7 +2,7 @@ import React, {  useState } from 'react'
 import { assets } from '../../../assets/assets';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import Item from '../../Sidbar/item';
+import Item from '../../Sidbar/Item';
 
 function Menscollection({url}) {
 
