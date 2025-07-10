@@ -62,7 +62,7 @@ function Showitem() {
                 <div>
 
 
-                 <img className=' show-img final-swiper-1' src='/show-2.webp' alt=''/> 
+                 <img className=' show-img final-swiper-1' src='/11-wom-1.webp' alt=''/> 
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
