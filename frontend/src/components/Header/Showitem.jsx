@@ -46,7 +46,7 @@ function Showitem() {
                <div >
                 <div>
                   
-                <img className='show-img final-swiper-1' src='/src/assets/show-1.webp' alt=''/>
+                <img className='show-img final-swiper-1' src='/show-1.webp' alt=''/>
                 </div>
                 <div className='show-pad'> <Link to="/watches">
                  <button className="learn-more show-but">
@@ -62,7 +62,7 @@ function Showitem() {
                 <div>
 
 
-                 <img className=' show-img final-swiper-1' src='/assets/show-2.webp' alt=''/> 
+                 <img className=' show-img final-swiper-1' src='/show-2.webp' alt=''/> 
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
@@ -79,7 +79,7 @@ function Showitem() {
 {/*                   <div className=' category-img-44 show-img final-swiper-3'> </div> */}
                 <div>
 
-                <img className='category-img-44 show-img' src='/assets/show-3.webp' alt=''/>
+                <img className='category-img-44 show-img' src='/show-3.webp' alt=''/>
                 </div>
                 <div className='show-pad'>
                      <Link to="/shop"> 
@@ -96,7 +96,7 @@ function Showitem() {
                 <div>
 {/*                   <div className='show-img final-swiper-4'> </div> */}
 
-                <img className=' show-img' src='/assets/ss.webp' alt=''/>
+                <img className=' show-img' src='/ss.webp' alt=''/>
                 </div>
                 <div className='show-pad'>
                     <Link to="/shoes"> 
