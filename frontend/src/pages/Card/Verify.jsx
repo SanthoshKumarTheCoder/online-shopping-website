@@ -8,10 +8,10 @@ function Verify() {
      const [searchParams]=useSearchParams();
     const success =searchParams.get("success")
     const orderId =searchParams.get("orderId")
-    const {url, setCartItems}=useContext(StoreContext);
+    const { setCartItems}=useContext(StoreContext);
     const navigate=useNavigate();
 const verifyPament=async()=>{
-    const response=await axios.post(url+"/api/order/verify",{success,orderId})
+    const response=await axios.post(`$https://ba-ua9j.onrender.com/api/order/verify`,{success,orderId})
 if (response.data.success) {
     navigate("/myorder")
 }
