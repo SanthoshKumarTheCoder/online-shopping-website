@@ -11,18 +11,31 @@ import * as React from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const [loading, setLoading] = React.useState(false);
+ const navigate = useNavigate();
 
+  // Function to navigate to the dress category page
+  const goToDress = () => {
+    navigate('/dress'); 
+  };
+  // Function to navigate to the shoes category page
+  const goToShoes = () => {
+    navigate('/shoes');
+  };
   React.useEffect(() => {
     if (loading) {
       const timeout = setTimeout(() => setLoading(false), 2000);
       return () => clearTimeout(timeout);
     }
   }, [loading]);
-
+  useEffect(() => {
+        AOS.init({ duration: 1000 }); 
+      }, []);
   return (
     <div  >
       <div className='desktop-home'>
@@ -292,6 +305,24 @@ function Header() {
           <p className="delivery-des">Our packaging is best for products.</p>
       </div>
     </div>
+    </div>
+       <div data-aos="zoom-in"  className='category '>
+      <div className='category-heading'>
+        <p>MADE THE HARD WAY</p>
+        <h2>FEATURED CATEGORIES</h2>
+        <h6>santhosh store is a powerful eCommerce. Visit our shop page to see all main features for Your Store</h6>
+      </div>
+      <div className='category-img container'>
+      <Link to="/shop">  <img className='category-img-44' src='/src/assets/cat-bag-5_1296x.webp' alt=''/>
+      </Link>
+        <div className='category-img-1'>
+          <img onClick={goToDress} className='category-img-11' src='/src/assets/wooman-cat_670x.webp' alt=''/>
+         <img onClick={goToShoes}  className='category-img-11' src='/src/assets/boot-category-1-3-min_670x.webp' alt=''/>
+        </div>
+        <Link to="/watches">   <img className='category-img-45' src='/src/assets/menn.avif' alt=''/></Link>
+
+      </div>
+      <br/>
     </div>
     </div>
   )
