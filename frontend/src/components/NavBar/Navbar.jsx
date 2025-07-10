@@ -526,7 +526,7 @@ useEffect(() => {
                     {/* Display user profile image and name */}
                     <div className='navbar-profile-11'>
                     <img
-                      src='/src/assets/user.png'
+                      src='/user.png'
                     
                       style={{ width: "30px", height: "30px", borderRadius: "50%" }}
                     /><span>{user?.name}</span><Button variant="outlined"  sx={{
