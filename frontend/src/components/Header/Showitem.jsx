@@ -60,9 +60,9 @@ function Showitem() {
           <SwiperSlide>
           <div>
                 <div>
-                  <div className='show-img final-swiper-2'> </div>
+{/*                   <div className='show-img final-swiper-2'> </div> */}
 
-                {/* <img className=' show-img final-swiper-1' src='/src/assets/11-wom-1.webp' alt=''/> */}
+                 <img className=' show-img final-swiper-1' src='//src/assets/1745690662825-a1.webp' alt=''/> 
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
