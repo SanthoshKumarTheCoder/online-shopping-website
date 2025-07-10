@@ -253,7 +253,26 @@ font-size: 80px;
  .swiper-reviews p{
   place-self: center;
  }
-
+.final-swiper-1{
+   background-image: url(/src/assets/show-1.avif);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.final-swiper-2{
+   background-image: url(/src/assets/show-2.avif);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.final-swiper-3{
+   background-image: url(/src/assets/show-3.avif);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.final-swiper-4{
+   background-image: url(/src/assets/ss.avif);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 /* From Uiverse.io by Cornerstone-04 */ 
 .box {
   width: 140px;
