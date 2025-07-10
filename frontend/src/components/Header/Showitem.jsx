@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom';
 
-
 function Showitem() {
   return (
     <div className='SwiperSlide-gap '>
@@ -46,7 +45,8 @@ function Showitem() {
           <SwiperSlide>
                <div >
                 <div>
-                <img className='show-img' src='./assets/show-1.avif' alt=''/>
+                  <div className='show-img final-swiper-1'> </div>
+                {/* <img className='show-img final-swiper-1' src='/src/assets/show-1.avif' alt=''/> */}
                 </div>
                 <div className='show-pad'> <Link to="/watches">
                  <button className="learn-more show-but">
@@ -60,7 +60,9 @@ function Showitem() {
           <SwiperSlide>
           <div>
                 <div>
-                <img className=' show-img' src='./assets/11-wom-1.webp' alt=''/>
+                  <div className='show-img final-swiper-2'> </div>
+
+                {/* <img className=' show-img final-swiper-1' src='/src/assets/11-wom-1.webp' alt=''/> */}
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
@@ -74,8 +76,10 @@ function Showitem() {
             </SwiperSlide>
             <SwiperSlide>
             <div>
+                  <div className=' category-img-44 show-img final-swiper-3'> </div>
                 <div>
-                <img className='category-img-44 show-img' src='./assets/show-3.avif' alt=''/>
+
+                {/* <img className='category-img-44 show-img' src='/src/assets/show-3.avif' alt=''/> */}
                 </div>
                 <div className='show-pad'>
                      <Link to="/shop"> 
@@ -90,7 +94,9 @@ function Showitem() {
             <SwiperSlide>
             <div>
                 <div>
-                <img className=' show-img' src='./assets/ss.avif' alt=''/>
+                  <div className='show-img final-swiper-4'> </div>
+
+                {/* <img className=' show-img' src='/src/assets/ss.avif' alt=''/> */}
                 </div>
                 <div className='show-pad'>
                     <Link to="/shoes"> 
