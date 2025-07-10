@@ -254,22 +254,22 @@ font-size: 80px;
   place-self: center;
  }
 .final-swiper-1{
-   background-image: url(/src/assets/show-1.avif);
+   background-image: url(/src/assets/show-1.webp);
  background-repeat: no-repeat;
  background-size: cover;
 }
 .final-swiper-2{
-   background-image: url(/src/assets/show-2.avif);
+   background-image: url(/src/assets/show-2.webp);
  background-repeat: no-repeat;
  background-size: cover;
 }
 .final-swiper-3{
-   background-image: url(/src/assets/show-3.avif);
+   background-image: url(/src/assets/show-3.webp);
  background-repeat: no-repeat;
  background-size: cover;
 }
 .final-swiper-4{
-   background-image: url(/src/assets/ss.avif);
+   background-image: url(/src/assets/ss.webp);
  background-repeat: no-repeat;
  background-size: cover;
 }
