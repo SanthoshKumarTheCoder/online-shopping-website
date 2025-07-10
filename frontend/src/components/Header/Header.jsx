@@ -11,8 +11,6 @@ import * as React from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useNavigate } from 'react-router-dom';
 
 function Header() {
@@ -32,10 +30,9 @@ function Header() {
       const timeout = setTimeout(() => setLoading(false), 2000);
       return () => clearTimeout(timeout);
     }
+   
   }, [loading]);
-  useEffect(() => {
-        AOS.init({ duration: 1000 }); 
-      }, []);
+
   return (
     <div  >
       <div className='desktop-home'>
