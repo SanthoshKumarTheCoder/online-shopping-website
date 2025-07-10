@@ -31,7 +31,7 @@ Cheers,
  Santhosh Kumar 😄`; // Example body
   
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://ba-ua9j.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
