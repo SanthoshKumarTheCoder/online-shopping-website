@@ -45,8 +45,8 @@ function Showitem() {
           <SwiperSlide>
                <div >
                 <div>
-                  <div className='show-img final-swiper-1'> </div>
-                {/* <img className='show-img final-swiper-1' src='/src/assets/show-1.avif' alt=''/> */}
+                  
+                <img className='show-img final-swiper-1' src='/src/assets/show-1.webp' alt=''/>
                 </div>
                 <div className='show-pad'> <Link to="/watches">
                  <button className="learn-more show-but">
@@ -60,9 +60,9 @@ function Showitem() {
           <SwiperSlide>
           <div>
                 <div>
-{/*                   <div className='show-img final-swiper-2'> </div> */}
 
-                 <img className=' show-img final-swiper-1' src='//src/assets/1745690662825-a1.webp' alt=''/> 
+
+                 <img className=' show-img final-swiper-1' src='/assets/show-2.webp' alt=''/> 
                 </div>
                 <div className='show-pad'> <Link to="/dress">
                  <button className="learn-more show-but">
@@ -76,10 +76,10 @@ function Showitem() {
             </SwiperSlide>
             <SwiperSlide>
             <div>
-                  <div className=' category-img-44 show-img final-swiper-3'> </div>
+{/*                   <div className=' category-img-44 show-img final-swiper-3'> </div> */}
                 <div>
 
-                {/* <img className='category-img-44 show-img' src='/src/assets/show-3.avif' alt=''/> */}
+                <img className='category-img-44 show-img' src='/assets/show-3.webp' alt=''/>
                 </div>
                 <div className='show-pad'>
                      <Link to="/shop"> 
@@ -94,9 +94,9 @@ function Showitem() {
             <SwiperSlide>
             <div>
                 <div>
-                  <div className='show-img final-swiper-4'> </div>
+{/*                   <div className='show-img final-swiper-4'> </div> */}
 
-                {/* <img className=' show-img' src='/src/assets/ss.avif' alt=''/> */}
+                <img className=' show-img' src='/assets/ss.webp' alt=''/>
                 </div>
                 <div className='show-pad'>
                     <Link to="/shoes"> 
