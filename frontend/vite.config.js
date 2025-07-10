@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+   base: './',
   server: {
     proxy: {
-      '/api': 'http://localhost:5008', // 👈 Proxy API calls to backend
+      '/api': 'https://ba-ua9j.onrender.com', // 👈 Proxy API calls to backend
     },
   },
 })
