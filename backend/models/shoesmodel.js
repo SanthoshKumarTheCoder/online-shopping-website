@@ -9,6 +9,6 @@ const shoesSchema = new mongoose.Schema({
   image:{ type: String, required: true },
   category:{ type: String, required: true }
 })
-const shoesModel = mongoose.models.item || mongoose.model("Shoes Item",shoesSchema);
+const shoesModel = mongoose.models.item || mongoose.model("Shoes collection",shoesSchema);
 
 export default shoesModel;
