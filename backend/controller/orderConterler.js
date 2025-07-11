@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 
 const placeOrder=async(req,res)=>{
-    const frontend_url="https://santhoshkumar.onrender.com/"
+    const frontend_url="https://santhoshkumar.onrender.com"
 try {
   const userEmail = req.user?.email;
     if (!userEmail) {
