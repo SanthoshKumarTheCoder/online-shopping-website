@@ -34,7 +34,7 @@ function DressDeatailes() {
             <div className='item-deatail-right-side'>
                 <div className='display-item-heading'>
             <h2 className="text-2xl font-semibold mb-4">{item.name}</h2>
-            <img className='rating-img' src='/src/assets/rating_starts.webp'/>
+            <img className='rating-img' src='rating_starts.webp'/>
                 </div>
             <p className="mb-2 text-gray-700">{item.description}</p>
             <div className="pricee">
