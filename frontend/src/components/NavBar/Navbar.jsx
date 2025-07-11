@@ -371,7 +371,7 @@ useEffect(() => {
                     
                     <div className='mobile-user-img'>
                    <Link to="/userinfo"> <img
-                      src='/src/assets/user.png'
+                      src='user.png'
                     
                       style={{ width: "18px", height: "18px", borderRadius: "50%" ,marginTop:"10px"}}
                     /></Link>
