@@ -9,6 +9,6 @@ const itemSchema = new mongoose.Schema({
   image:{ type: String, required: true },
   category:{ type: String, required: true }
 })
-const itemModel = mongoose.models.item || mongoose.model("items",itemSchema);
+const itemModel = mongoose.models.item || mongoose.model("Bag collection",itemSchema);
 
 export default itemModel;
