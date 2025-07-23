@@ -40,7 +40,7 @@ const [isBackendReady, setIsBackendReady] = useState(false);
 
   useEffect(() => {
     // Replace this with your actual backend health check route
-    axios.get("http://localhost:5008") 
+    axios.get("https://ba-ua9j.onrender.com") 
       .then(() => {
         setIsBackendReady(true);
       })
