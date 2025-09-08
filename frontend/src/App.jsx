@@ -29,40 +29,12 @@ import Terms from './components/Footer/Terms';
 import UserInfo from './components/Loginpopup/UserInfo';
 import Verify from './pages/Card/Verify';
 import MyOrders from './pages/Card/MyOrders';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 
 
 function App() {
   // const notify = () => toast("Wow! This is a toast notification!");
-const [isBackendReady, setIsBackendReady] = useState(false);
 
-  useEffect(() => {
-    // Replace this with your actual backend health check route
-    axios.get("https://ba-ua9j.onrender.com") 
-      .then(() => {
-        setIsBackendReady(true);
-      })
-      .catch(() => {
-        setIsBackendReady(false);
-      });
-  }, []);
-
-  if (!isBackendReady) {
-    return (
-      <div style={{ height: "100vh", background: "#000", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div className="loader-1">
-          {[...Array(5)].map((_, i) => (
-            <div key={i} className="circle-1">
-              <div className="dot-1"></div>
-              <div className="outline-1"></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
   return (
     <>
      <div>
