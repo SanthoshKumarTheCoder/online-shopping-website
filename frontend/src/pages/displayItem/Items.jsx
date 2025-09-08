@@ -5,18 +5,32 @@ import ProductLoadersList from "./ItemLoader";
 
 function Items({category}) {
   const { list_items } = useContext(StoreContext);
-    const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
+    const [isBackendReady, setIsBackendReady] = useState(false);
+  
+    useEffect(() => {
+      // Replace this with your actual backend health check route
+      fetch("https://ba-ua9j.onrender.com") 
+        .then(() => {
+          setIsBackendReady(true);
+        })
+        .catch(() => {
+          setIsBackendReady(false);
+        });
+    }, []);
+  
   return (
     <div className='display' >
-        {loading ? (
+        {isBackendReady ? (
         // ✅ Improved: Responsive Grid for Loader
-        <div
+       <div className="display-list">
+        {list_items.map((item,index)=>{
+          if (category==="All" || category===item.category) {
+            return <Listitem key={index} id={item._id} name={item.name}  price_1={item.price_1} price={item.price} description={item.description} image={item.image}/>
+          }
+        })}
+      </div>
+      ) : (
+         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
@@ -29,14 +43,7 @@ function Items({category}) {
           <ProductLoadersList />
           
         </div>
-      ) : (
-      <div className="display-list">
-        {list_items.map((item,index)=>{
-          if (category==="All" || category===item.category) {
-            return <Listitem key={index} id={item._id} name={item.name}  price_1={item.price_1} price={item.price} description={item.description} image={item.image}/>
-          }
-        })}
-      </div>)}
+      )}
     </div>
   )
 }
