@@ -6,33 +6,24 @@ import WatchesLoadersList from './WatchesLoader';
 
 function WatchesItems({ category }) {
   const { watches_items } = useContext(StoreContext);
-  const [loading, setLoading] = useState(true);
+  const [isBackendReady, setIsBackendReady] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+    // Replace this with your actual backend health check route
+    fetch("https://ba-ua9j.onrender.com") 
+      .then(() => {
+        setIsBackendReady(true);
+      })
+      .catch(() => {
+        setIsBackendReady(false);
+      });
   }, []);
 
   return (
    
     <div className='display' >
-        {loading ? (
+        {isBackendReady ? (
         // ✅ Improved: Responsive Grid for Loader
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-            gap: "10px",
-          }}
-        >
-        <WatchesLoadersList/>
-        <WatchesLoadersList/>
-        <WatchesLoadersList/>
-        <WatchesLoadersList/>
-          
-        </div>
-      ) : (
         <div className="display-list">
           {watches_items?.map((item, index) => 
             (category === "All" || category === item.category) && (
@@ -47,6 +38,21 @@ function WatchesItems({ category }) {
                 />
               ))}
             </div>
+      ) : (
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+            gap: "10px",
+          }}
+        >
+        <WatchesLoadersList/>
+        <WatchesLoadersList/>
+        <WatchesLoadersList/>
+        <WatchesLoadersList/>
+          
+        </div>
+       
           )}
         </div>
       );
