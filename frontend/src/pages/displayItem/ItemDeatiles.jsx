@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import {  useParams } from 'react-router-dom';
 import { StoreContext } from '../../components/context/Storecontext';
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
-
+import ProductLoadersList from './ItemLoader';
 
 function ItemDeatiles() {
         const { id } = useParams();
@@ -21,7 +21,7 @@ function ItemDeatiles() {
             .catch(err => console.error("Failed to fetch item:", err));
         }, [id, url]);
       
-        if (!item) return <p>Loading item details...</p>;
+        if (!item) return <ProductLoadersList />;
       
         return (
           <div className="item-detail-page"  onMouseEnter={() => setHovered(true)}>
